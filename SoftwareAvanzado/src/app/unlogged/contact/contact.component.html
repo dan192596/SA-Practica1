@@ -1,7 +1,7 @@
     <div fxLayout="row" fxLayoutAlign="center center" class="container-title">
         <h3>Contactos</h3>
         <span class="spacer"></span>
-        <button mat-button class="btn-primary" [routerLink]="['/configurations/roles/create']">
+        <button mat-button class="btn-primary" [routerLink]="['/configurations/contacts/create']">
             <span fxShow="true" fxHide.xs >Nuevo</span>
             <mat-icon fxShow="false" fxShow.xs>add_circle</mat-icon>
         </button>
@@ -30,11 +30,11 @@
                     <mat-icon>more_vert</mat-icon>
                   </button>
                 <mat-menu #menu="matMenu">
-                    <button mat-menu-item [routerLink]="['/configurations/roles/detail']" [queryParams]="{id: data.id}">
+                    <button mat-menu-item [routerLink]="['/configurations/contacts/create']" [queryParams]="{id: data.id}">
                       <mat-icon>info</mat-icon>
                       <span>Ver</span>
                     </button>                    
-                    <button mat-menu-item [routerLink]="['/configurations/roles/delete']" [queryParams]="{id: data.id}">
+                    <button mat-menu-item [routerLink]="['/configurations/contacts/delete']" [queryParams]="{id: data.id}">
                       <mat-icon>delete</mat-icon>
                       <span>Eliminar</span>
                     </button>

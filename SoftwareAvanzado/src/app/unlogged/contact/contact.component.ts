@@ -21,6 +21,8 @@ export class ContactComponent implements OnInit {
     params.set('webserviceVersion', '1.0.0');
     params.set('option', 'contact');
     params.set('api', 'hal');
+    params.set('list[limit]','0')
+    params.set('filter[search]','201404268')
 
    new Promise(resolve => {
       setTimeout(() => {

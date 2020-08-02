@@ -19,14 +19,22 @@ export class RestManagerService {
         params = params + key + '=' + value + '&';
       }
     });
-    console.log(rest + controller + (method !== '' ? '/' : '') + method + (params !== '' ? '?' : '/') + params)
     return this.http.get(rest + controller + (method !== '' ? '/' : '') + method + (params !== '' ? '?' : '/') + params);
   }
 
-  public insertObject(rest: string, controller: string, object: any) {
+  public insertObject(rest: string, controller: string, object: any, values: Map<string, string>) {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json'
     });
-    return this.http.post(rest + controller + '/', JSON.stringify(object), {headers});
+    let params = '';
+    values.forEach((value: string, key: string) => {
+      if (value !== '' && value !== null) {
+        params = params + key + '=' + value + '&';
+      }
+    });
+    console.log(rest + controller + (params !== '' ? '?' : '/') + params)
+    console.log(JSON.stringify(object))
+    console.log(headers)
+    return this.http.post(rest + controller + (params !== '' ? '?' : '/') + params, JSON.stringify(object));
   }
 }
