@@ -1,9 +1,18 @@
-## Practica 1 - Laboratorio de Software avanazado.
+# Practica 1 - Laboratorio de Software avanazado.
 1. Utilizar api.softwareavanzado.world para desarrollar un cliente de webservice: https://api.softwareavanzado.world/index.php?webserviceClient=administrator&webserviceVersion=1.0.0&option=contact&api=hal&format=doc
 
 2. Listar contactos.
 
 3. Crear 10 contactos incluyendo su número de carnet en el nombre
+
+## Lenguajes utilizados
+ - TypeScript
+
+## Framework
+ - Angular
+
+## Ejecutar proyecto
+    ng serve
 
 ## Breve explicacion de codigo
 `https://youtu.be/eDoAn66uOC8`
