@@ -8,7 +8,10 @@ import { ContactCrudComponent } from './contact/contact-crud/contact-crud.compon
 
 
 @NgModule({
-  declarations: [BasicAuthenticationLayoutComponent, ContactComponent, ContactCrudComponent],
+  declarations: [
+    ContactComponent, 
+    ContactCrudComponent
+  ],
   imports: [
     CommonModule,
     BasicAuthenticationRoutingModule
