@@ -1,9 +1,11 @@
-# Practica 1 - Laboratorio de Software avanazado.
-1. Utilizar api.softwareavanzado.world para desarrollar un cliente de webservice: https://api.softwareavanzado.world/index.php?webserviceClient=administrator&webserviceVersion=1.0.0&option=contact&api=hal&format=doc
+# Practica 2 - Laboratorio de Software avanazado.
+1. Repetir la práctica # 1 agregando credenciales tipo client_credentials y un token Bearer para poder volver a desarrollar el mismo ejercicio anterior (ahora requiere autenticación).  Documentación de client credentials.
 
-2. Listar contactos.
-
-3. Crear 10 contactos incluyendo su número de carnet en el nombre
+Usuario / Client ID: sa
+Client Secret: fb5089840031449f1a4bf2c91c2bd2261d5b2f122bd8754ffe23be17b107b8eb103b441de3771745
+WSDL:   https://api.softwareavanzado.world/index.php?webserviceClient=administrator&webserviceVersion=1.0.0&option=contact&api=soap&wsdl 
+Usuario: sa
+Contraseña: usac
 
 ## Lenguajes utilizados
  - TypeScript
@@ -14,10 +16,10 @@
 ## Ejecutar proyecto
     ng serve
 
-## Breve explicacion de codigo
-`https://youtu.be/eDoAn66uOC8`
-## Breve demostracion de aplicacion
-`https://youtu.be/8Z8LS6rI6s8`
+## Breve explicacion de codigo para token Bearer
+`https://youtu.be/L2zD7tM_vCo`
+## Breve demostracion de aplicacion token Bearer
+`https://youtu.be/syupV7SIj1g`
 ## Dependencias
 ### Angular Material
     https://v8.material.angular.io/
